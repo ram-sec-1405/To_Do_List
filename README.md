@@ -40,13 +40,12 @@ Upload to GitHub Pages for free hosting.
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Application with Calendar</title>
+    <title>Todo Application</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -138,7 +137,7 @@ Upload to GitHub Pages for free hosting.
             color: #555;
             margin-top: 5px;
         }
- 
+        
         .popup {
             visibility: hidden;
             min-width: 250px;
@@ -175,6 +174,7 @@ Upload to GitHub Pages for free hosting.
     </div>
     <footer>&copy; 2025 @Saveetha | All rights reserved.</footer>
 
+    <!-- Pop-up Notification -->
     <div id="popup" class="popup"></div>
 
     <script>
@@ -189,7 +189,7 @@ Upload to GitHub Pages for free hosting.
             popup.classList.add('show');
             setTimeout(() => {
                 popup.classList.remove('show');
-            }, 2000); 
+            }, 2000); // Pop-up disappears after 2 seconds
         }
 
         function addTodo() {
@@ -237,8 +237,10 @@ Upload to GitHub Pages for free hosting.
 
             todoList.appendChild(li);
 
+            // Show compact pop-up notification
             showPopup(`✅ Task Added: "${task}"`);
 
+            // Clear inputs
             todoInput.value = '';
             todoDate.value = '';
         }
@@ -253,6 +255,7 @@ Upload to GitHub Pages for free hosting.
     </script>
 </body>
 </html>
+
 
 
 
