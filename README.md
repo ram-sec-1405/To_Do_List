@@ -38,10 +38,9 @@ Upload to GitHub Pages for free hosting.
 
 ### PROGRAM:
 
-
+```
 
 <html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -257,7 +256,7 @@ Upload to GitHub Pages for free hosting.
 </html>
 
 
-
+```
 
 
 
